@@ -1,0 +1,87 @@
+" Enable syntax highlighting
+syntax on
+
+
+" Tie the clipboard to the `*` register so that we can yank to
+" and paste from whatever we yank.
+set clipboard=unnamed
+
+
+" Create an undo directory such that we can go back in time by
+" having the UNDOFILE directive set.
+"
+" By keeping them all under a single directory, we make sure
+" that they don't live in random places.
+set undodir=~/.vim/.undo
+set undofile
+
+
+" Escape with smashing j and k; easier to press quickly on
+" slow systems.
+inoremap jk <esc>
+inoremap kj <esc>
+
+
+" Save on enter.
+nmap <cr> :w<cr>
+
+
+" Clear highlights on space.
+nmap <space> :noh<cr>
+
+
+" Shorthand for window switching.
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+
+" Don't create swap file.
+set noswapfile
+
+
+" Highlight the search results with incremental
+" search.
+set hlsearch
+set incsearch
+
+
+" Do not show preview option.
+set completeopt-=preview
+
+
+" Automatically indent, except for yaml.
+set autoindent
+set smartindent
+autocmd FileType yaml setlocal indentexpr=
+
+
+" Break lines when max-width is hit.
+set linebreak
+
+
+" Show bottom-right numbers.
+set ruler
+
+
+" Enable the use of mouse operations.
+set mouse=a
+
+
+" Just because.
+set background=light
+
+
+" Add automatic comment prefix adder.
+set formatoptions=tcqr
+
+
+" Enable autocompletion + better popup interaction.
+filetype plugin indent on
+
+set completeopt=noinsert,menuone,noselect
+inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr> <cr> ((pumvisible())?("\<C-y>"):("\<cr>"))
+
+autocmd BufEnter * call ncm2#enable_for_buffer()

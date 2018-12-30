@@ -1,0 +1,30 @@
+[submodule "pack/cirocosta/editorconfig-vim"]
+	path = pack/cirocosta/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "pack/cirocosta/vim-go"]
+	path = pack/cirocosta/start/vim-go
+	url = https://github.com/fatih/vim-go
+[submodule "pack/cirocosta/start/vim-jsonnet"]
+	path = pack/cirocosta/start/vim-jsonnet
+	url = https://github.com/google/vim-jsonnet
+[submodule "pack/cirocosta/start/vim-vinegar"]
+	path = pack/cirocosta/start/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar
+[submodule "pack/cirocosta/start/nvim-yarp"]
+	path = pack/cirocosta/start/nvim-yarp
+	url = https://github.com/roxma/nvim-yarp
+[submodule "pack/cirocosta/start/vim-hug-neovim-rpc"]
+	path = pack/cirocosta/start/vim-hug-neovim-rpc
+	url = https://github.com/roxma/vim-hug-neovim-rpc
+[submodule "pack/cirocosta/start/ncm2"]
+	path = pack/cirocosta/start/ncm2
+	url = https://github.com/ncm2/ncm2
+[submodule "pack/cirocosta/start/ncm2-go"]
+	path = pack/cirocosta/start/ncm2-go
+	url = https://github.com/ncm2/ncm2-go
+[submodule "pack/cirocosta/start/ncm2-bufword"]
+	path = pack/cirocosta/start/ncm2-bufword
+	url = https://github.com/ncm2/ncm2-bufword
+[submodule "pack/cirocosta/start/ncm2-path"]
+	path = pack/cirocosta/start/ncm2-path
+	url = https://github.com/ncm2/ncm2-path
