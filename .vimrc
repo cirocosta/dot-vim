@@ -85,3 +85,9 @@ inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr> <cr> ((pumvisible())?("\<C-y>"):("\<cr>"))
 
 autocmd BufEnter * call ncm2#enable_for_buffer()
+
+" Make ncm2-go make use of gocode-gomod instead of
+" regular `gocode` as most of the time we're using
+" golang modules.
+let g:ncm2_go#gocode_path="gocode-gomod"
+
