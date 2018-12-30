@@ -1,9 +1,3 @@
-[submodule "pack/cirocosta/editorconfig-vim"]
-	path = pack/cirocosta/start/editorconfig-vim
-	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "pack/cirocosta/vim-go"]
-	path = pack/cirocosta/start/vim-go
-	url = https://github.com/fatih/vim-go
 [submodule "pack/cirocosta/start/vim-jsonnet"]
 	path = pack/cirocosta/start/vim-jsonnet
 	url = https://github.com/google/vim-jsonnet
@@ -28,3 +22,9 @@
 [submodule "pack/cirocosta/start/ncm2-path"]
 	path = pack/cirocosta/start/ncm2-path
 	url = https://github.com/ncm2/ncm2-path
+[submodule "pack/cirocosta/start/editorconfig-vim"]
+	path = pack/cirocosta/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "pack/cirocosta/start/vim-go"]
+	path = pack/cirocosta/start/vim-go
+	url = https://github.com/fatih/vim-go
