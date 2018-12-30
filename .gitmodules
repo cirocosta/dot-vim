@@ -28,3 +28,6 @@
 [submodule "pack/cirocosta/start/vim-go"]
 	path = pack/cirocosta/start/vim-go
 	url = https://github.com/fatih/vim-go
+[submodule "pack/cirocosta/start/YouCompleteMe"]
+	path = pack/cirocosta/start/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
