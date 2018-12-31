@@ -31,3 +31,6 @@
 [submodule "pack/cirocosta/start/YouCompleteMe"]
 	path = pack/cirocosta/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
+[submodule "pack/cirocosta/start/vim-commentary"]
+	path = pack/cirocosta/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
