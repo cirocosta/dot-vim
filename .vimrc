@@ -6,6 +6,9 @@ syntax on
 " and paste from whatever we yank.
 set clipboard=unnamed
 
+" Set the encoding to utf-8 so that vim doesn't default to
+" latin-1
+set encoding=utf-8
 
 " Create an undo directory such that we can go back in time by
 " having the UNDOFILE directive set.
@@ -79,15 +82,20 @@ set formatoptions=tcqr
 
 " Enable autocompletion + better popup interaction.
 filetype plugin indent on
-
 set completeopt=noinsert,menuone,noselect
 inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap <expr> <cr> ((pumvisible())?("\<C-y>"):("\<cr>"))
 
-autocmd BufEnter * call ncm2#enable_for_buffer()
+inoremap <silent> <CR> <C-r>=<SID>close_and_linebreak()<CR>
+function! s:close_and_linebreak()
+  return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
+endfunction
+
+
+" Enable ncm2 for all go files
+autocmd BufEnter *.go call ncm2#enable_for_buffer()
+
 
 " Make ncm2-go make use of gocode-gomod instead of
 " regular `gocode` as most of the time we're using
 " golang modules.
 let g:ncm2_go#gocode_path="gocode-gomod"
-
