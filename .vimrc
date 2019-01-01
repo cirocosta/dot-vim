@@ -100,3 +100,6 @@ autocmd BufEnter *.go call ncm2#enable_for_buffer()
 " golang modules.
 let g:ncm2_go#gocode_path="gocode-gomod"
 let g:go_def_mode = 'godef'
+
+" Enable YCM only for C / C headers / CPP
+let g:ycm_filetype_whitelist = {'c': 1, 'cpp': 1}
