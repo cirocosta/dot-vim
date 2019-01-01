@@ -99,3 +99,4 @@ autocmd BufEnter *.go call ncm2#enable_for_buffer()
 " regular `gocode` as most of the time we're using
 " golang modules.
 let g:ncm2_go#gocode_path="gocode-gomod"
+let g:go_def_mode = 'godef'
