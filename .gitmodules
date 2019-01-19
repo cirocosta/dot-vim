@@ -37,3 +37,6 @@
 [submodule "pack/cirocosta/start/vim-hcl"]
 	path = pack/cirocosta/start/vim-hcl
 	url = https://github.com/b4b4r07/vim-hcl
+[submodule "pack/cirocosta/start/vim-yaml-folds"]
+	path = pack/cirocosta/start/vim-yaml-folds
+	url = https://github.com/pedrohdz/vim-yaml-folds

@@ -1,6 +1,8 @@
 " Enable syntax highlighting
 syntax on
 
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
 
 " Tie the clipboard to the `*` register so that we can yank to
 " and paste from whatever we yank.
@@ -73,7 +75,7 @@ set mouse=a
 
 
 " Just because.
-set background=light
+set background=dark
 
 
 " Add automatic comment prefix adder.
@@ -103,3 +105,12 @@ let g:go_def_mode = 'godef'
 
 " Enable YCM only for C / C headers / CPP
 let g:ycm_filetype_whitelist = {'c': 1, 'cpp': 1}
+
+
+" Yaml specific
+autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 expandtab
+
+" Disable autofolding at startup
+set foldlevelstart=99
+
+autocmd BufRead,BufNewFile */templates/*.yaml,*/templates/*.tpl,*/templates/NOTES.txt set ft=gotexttmpl
