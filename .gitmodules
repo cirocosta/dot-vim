@@ -40,3 +40,6 @@
 [submodule "pack/cirocosta/start/vim-yaml-folds"]
 	path = pack/cirocosta/start/vim-yaml-folds
 	url = https://github.com/pedrohdz/vim-yaml-folds
+[submodule "pack/cirocosta/start/rust.vim"]
+	path = pack/cirocosta/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim

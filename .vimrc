@@ -104,13 +104,18 @@ let g:ncm2_go#gocode_path="gocode-gomod"
 let g:go_def_mode = 'godef'
 
 " Enable YCM only for C / C headers / CPP
-let g:ycm_filetype_whitelist = {'c': 1, 'cpp': 1}
-
-
-" Yaml specific
-autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 expandtab
+let g:ycm_filetype_whitelist = {'c': 1, 'cpp': 1, 'rust': 1}
 
 " Disable autofolding at startup
 set foldlevelstart=99
 
 autocmd BufRead,BufNewFile */templates/*.yaml,*/templates/*.tpl,*/templates/NOTES.txt set ft=gotexttmpl
+
+" FileType specific
+autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType tf setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType gotexttmpl setlocal tabstop=2 shiftwidth=2 expandtab
+
+autocmd FileType rust nnoremap <buffer> <silent> gd :YcmCompleter GoToDefinition<cr>
+autocmd FileType c nnoremap <buffer> <silent> gd :YcmCompleter GoToDefinition<cr>
+autocmd FileType cpp nnoremap <buffer> <silent> gd :YcmCompleter GoToDefinition<cr>
