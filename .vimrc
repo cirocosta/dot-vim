@@ -100,8 +100,8 @@ autocmd BufEnter *.go call ncm2#enable_for_buffer()
 " Make ncm2-go make use of gocode-gomod instead of
 " regular `gocode` as most of the time we're using
 " golang modules.
-let g:ncm2_go#gocode_path="gocode-gomod"
-let g:go_def_mode = 'godef'
+" let g:ncm2_go#gocode_path="gocode-gomod"
+let g:go_def_mode = 'gopls'
 
 " Enable YCM only for C / C headers / CPP
 let g:ycm_filetype_whitelist = {'c': 1, 'cpp': 1, 'rust': 1}
@@ -115,6 +115,7 @@ autocmd BufRead,BufNewFile */templates/*.yaml,*/templates/*.tpl,*/templates/NOTE
 autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType tf setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType gotexttmpl setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 expandtab
 
 autocmd FileType rust nnoremap <buffer> <silent> gd :YcmCompleter GoToDefinition<cr>
 autocmd FileType c nnoremap <buffer> <silent> gd :YcmCompleter GoToDefinition<cr>
