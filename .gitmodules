@@ -43,3 +43,6 @@
 [submodule "pack/cirocosta/start/rust.vim"]
 	path = pack/cirocosta/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
+[submodule "pack/cirocosta/start/booklit.vim"]
+	path = pack/cirocosta/start/booklit.vim
+	url = https://github.com/vito/booklit.vim

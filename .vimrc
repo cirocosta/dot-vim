@@ -114,9 +114,13 @@ autocmd BufRead,BufNewFile */templates/*.yaml,*/templates/*.tpl,*/templates/NOTE
 " FileType specific
 autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType tf setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType hcl setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType gotexttmpl setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 expandtab
 
 autocmd FileType rust nnoremap <buffer> <silent> gd :YcmCompleter GoToDefinition<cr>
 autocmd FileType c nnoremap <buffer> <silent> gd :YcmCompleter GoToDefinition<cr>
 autocmd FileType cpp nnoremap <buffer> <silent> gd :YcmCompleter GoToDefinition<cr>
+
+highlight ColorColumn ctermbg=4
