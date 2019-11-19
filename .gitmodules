@@ -46,3 +46,6 @@
 [submodule "pack/cirocosta/start/booklit.vim"]
 	path = pack/cirocosta/start/booklit.vim
 	url = https://github.com/vito/booklit.vim
+[submodule "pack/cirocosta/start/bpftrace.vim"]
+	path = pack/cirocosta/start/bpftrace.vim
+	url = https://github.com/mmarchini/bpftrace.vim
