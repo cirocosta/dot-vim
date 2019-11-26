@@ -17,4 +17,5 @@ INSTALL
 
 		open vim
 		:GoInstallBinaries
-
+			- use omnifunc: <C-x><C-o>
+			- jump to def: `gd`
