@@ -15,6 +15,6 @@ INSTALL
 
 	3. Prepare go completion
 
-		pip3 install pynvim
-		vim --cmd GoInstallBinaries
+		open vim
+		:GoInstallBinaries
 
