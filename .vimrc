@@ -97,22 +97,14 @@ function! s:close_and_linebreak()
 endfunction
 
 
-" Enable ncm2 for all go files
-autocmd BufEnter *.go call ncm2#enable_for_buffer()
-
-
-" Make ncm2-go make use of gocode-gomod instead of
-" regular `gocode` as most of the time we're using
-" golang modules.
-" let g:ncm2_go#gocode_path="gocode-gomod"
-let g:go_def_mode = 'gopls'
-
 " Enable YCM only for C / C headers / CPP / rust
 let g:ycm_filetype_whitelist = {'c': 1, 'cpp': 1, 'rust': 1}
+
 
 " Disable autofolding at startup
 set foldlevelstart=99
 
+" helm
 autocmd BufRead,BufNewFile */templates/*.yaml,*/templates/*.tpl,*/templates/NOTES.txt set ft=gotexttmpl
 
 " FileType specific
@@ -134,3 +126,6 @@ highlight ColorColumn ctermbg=4
 
 let g:ycm_enable_diagnostic_signs = 0
 let g:ycm_enable_diagnostic_highlighting = 0
+
+let g:go_highlight_diagnostic_errors = 0
+let g:go_highlight_diagnostic_warnings = 0
