@@ -129,3 +129,5 @@ let g:ycm_enable_diagnostic_highlighting = 0
 
 let g:go_highlight_diagnostic_errors = 0
 let g:go_highlight_diagnostic_warnings = 0
+
+let g:go_fmt_command = "goimports"
