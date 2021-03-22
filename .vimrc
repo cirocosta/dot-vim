@@ -6,7 +6,7 @@ set backspace=indent,eol,start
 
 " Tie the clipboard to the `*` register so that we can yank to
 " and paste from whatever we yank.
-set clipboard=unnamed
+" set clipboard=unnamed
 
 " Set the encoding to utf-8 so that vim doesn't default to
 " latin-1
@@ -83,7 +83,7 @@ set formatoptions=tcqr
 
 
 " Because we're in the 80s
-set tw=80
+" set tw=80
 
 
 " Enable autocompletion + better popup interaction.
@@ -130,4 +130,10 @@ let g:ycm_enable_diagnostic_highlighting = 0
 let g:go_highlight_diagnostic_errors = 0
 let g:go_highlight_diagnostic_warnings = 0
 
-let g:go_fmt_command = "goimports"
+" let g:go_fmt_command = "goimports"
+command G GoImports
+command P set paste
+command PP set nopaste
+
+highlight Pmenu ctermbg=gray guibg=gray
+highlight PmenuSel ctermbg=yellow guibg=yellow
