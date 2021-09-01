@@ -85,7 +85,7 @@ set mouse=a
 
 " Just because.
 "
-set background=dark
+set background=light
 
 
 " Add automatic comment prefix adder.
