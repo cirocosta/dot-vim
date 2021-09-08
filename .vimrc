@@ -12,6 +12,7 @@ set backspace=indent,eol,start
 "
 set encoding=utf-8
 
+
 " Create an undo directory such that we can go back in time by
 " having the UNDOFILE directive set.
 "
@@ -65,7 +66,6 @@ set completeopt-=preview
 "
 set autoindent
 set smartindent
-autocmd FileType yaml setlocal indentexpr=
 
 
 " Break lines when max-width is hit.
@@ -128,6 +128,14 @@ command P set paste
 command PP set nopaste
 
 
+" vim-go tweaking.
+"
+let g:go_fmt_autosave = 1
+let g:go_highlight_diagnostic_errors = 0
+let g:go_highlight_diagnostic_warnings = 0
+let g:go_imports_autosave = 0
+
+
 " Because we're in the 80s.
 "
 set colorcolumn=80
@@ -135,9 +143,7 @@ highlight ColorColumn ctermbg=7
 " highlight ColorColumn ctermbg=0 guibg=lightgray
 
 
-" vim-go tweaking.
+" Filetype-specific configgurations
 "
-let g:go_fmt_autosave = 1
-let g:go_highlight_diagnostic_errors = 0
-let g:go_highlight_diagnostic_warnings = 0
-let g:go_imports_autosave = 0
+autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab smarttab
+autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 expandtab
