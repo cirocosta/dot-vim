@@ -49,3 +49,6 @@
 [submodule "pack/cirocosta/start/bpftrace.vim"]
 	path = pack/cirocosta/start/bpftrace.vim
 	url = https://github.com/mmarchini/bpftrace.vim
+[submodule "pack/cirocosta/start/vim-better-whitespace"]
+	path = pack/cirocosta/start/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
