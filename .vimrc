@@ -122,8 +122,8 @@ command PP set nopaste
 "
 set colorcolumn=80
 let g:better_whitespace_ctermcolor=7
-highlight ColorColumn ctermbg=7
-" highlight ColorColumn ctermbg=0 guibg=lightgray
+" highlight ColorColumn ctermbg=7
+highlight ColorColumn ctermbg=0 guibg=lightgray
 
 
 " Filetype-specific configgurations
