@@ -80,7 +80,7 @@ set mouse=a
 
 " Just because.
 "
-set background=light
+set background=dark
 
 
 " Add automatic comment prefix adder.
@@ -120,10 +120,11 @@ command PP set nopaste
 
 " Because we're in the 80s.
 "
-set colorcolumn=80
+" set colorcolumn=80
+set tw=80
 let g:better_whitespace_ctermcolor=7
-" highlight ColorColumn ctermbg=7
-highlight ColorColumn ctermbg=0 guibg=lightgray
+highlight ColorColumn ctermbg=7
+" highlight ColorColumn ctermbg=0 guibg=lightgray
 
 
 " Filetype-specific configgurations
@@ -131,6 +132,8 @@ highlight ColorColumn ctermbg=0 guibg=lightgray
 au BufRead,BufNewFile *.bpf setfiletype c
 au FileType cpp nnoremap gd :ALEGoToDefinition<CR>
 au FileType cpp setlocal ts=2 sts=2 sw=2 expandtab smarttab
+au FileType javascript setlocal ts=2 sts=2 sw=2 expandtab smarttab
+au FileType text setlocal ts=2 sts=2 sw=2 expandtab smarttab
 au FileType sh setlocal tabstop=8 shiftwidth=8 expandtab
 au FileType markdown setlocal tabstop=2 shiftwidth=2 expandtab
 au FileType rust nnoremap gd :ALEGoToDefinition<CR>
@@ -158,5 +161,4 @@ let g:ale_set_loclist = 0
 let g:ale_linters = { 'rust': ['analyzer'], 'go': ['govet'], 'sh': [] }
 let g:ale_fixers = { 'rust': ['rustfmt', 'trim_whitespace', 'remove_trailing_lines'] }
 let g:ale_set_highlights = 0
-
 
